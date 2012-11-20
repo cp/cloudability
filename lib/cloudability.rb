@@ -1,5 +1,9 @@
-require "cloudability/version"
+require_relative "cloudability/version"
+require 'httparty'
+require 'mash'
 
 module Cloudability
-  # Your code goes here...
+  Dir[File.dirname(__FILE__) + '/cloudability/*.rb'].each do |file|
+    require file
+  end
 end

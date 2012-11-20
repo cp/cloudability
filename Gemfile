@@ -1,4 +1,12 @@
-source 'https://rubygems.org'
+source :rubygems
+gem 'httparty'
+gem 'mash'
 
-# Specify your gem's dependencies in cloudability.gemspec
-gemspec
+group :test do
+  gem 'turn'
+  gem 'rake'
+
+  gem 'shoulda'
+  gem 'fakeweb'
+  gem 'jnunemaker-matchy'
+end

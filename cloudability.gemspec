@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
   gem.name          = "cloudability"
   gem.version       = Cloudability::VERSION
   gem.authors       = ["Aaron Bento"]
-  gem.email         = ["rkive@me.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.email         = ["abento+github@gmail.com"]
+  gem.description   = %q{Ruby wrapper for the Cloudability API}
+  gem.summary       = %q{Ruby wrapper for the Cloudability API using httparty}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
