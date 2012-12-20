@@ -1,4 +1,4 @@
-# Cloudability
+# Cloudability  [![Build Status](https://secure.travis-ci.org/rkive/cloudability.png)](http://travis-ci.org/rkive/cloudability)
 
 Ruby wrapper for the Cloudability API using httparty.
 
