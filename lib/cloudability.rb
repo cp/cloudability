@@ -1,9 +1,10 @@
-require_relative "cloudability/version"
 require 'httparty'
 require 'mash'
 
 module Cloudability
-  Dir[File.dirname(__FILE__) + '/cloudability/*.rb'].each do |file|
-    require file
-  end
+  require 'cloudability/billing'
+  require 'cloudability/budgets'
+  require 'cloudability/credentials'
+  require 'cloudability/time_helper'
+  require 'cloudability/version'
 end
