@@ -15,9 +15,9 @@ class TestCloudability < Test::Unit::TestCase
 
     should "return a Mash with the last three months in YYYY-MM-01" do
       months = @timehelper.last_three_months
-      months.current.should == "2012-11-01"
-      months.last.should    == "2012-10-01"
-      months.three.should   == "2012-09-01"
+      months.current.should == "2012-12-01"
+      months.last.should    == "2012-11-01"
+      months.three.should   == "2012-10-01"
     end
 
   end
