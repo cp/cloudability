@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency('httparty', "~> 0.9.0")
   gem.add_dependency('mash', "~> 0.1.1")
 
-  gem.add_development_dependency("turn", "~> 2.0.1")
+  gem.add_development_dependency("turn", "~> 0.9.6")
   gem.add_development_dependency("rake", "~> 0.6")
   gem.add_development_dependency("shoulda", "~> 3.3.2")
   gem.add_development_dependency("fakeweb", "~> 1.3.0")
