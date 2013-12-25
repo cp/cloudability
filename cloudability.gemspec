@@ -6,6 +6,7 @@ require 'cloudability/version'
 Gem::Specification.new do |gem|
   gem.name          = "cloudability"
   gem.version       = Cloudability::VERSION
+  gem.licenses      = ['MIT']
   gem.authors       = ["Colby Aley", "Aaron Bento"]
   gem.email         = ["colby@cloudability.com", "abento+github@gmail.com"]
   gem.description   = %q{Ruby wrapper for the Cloudability API}
