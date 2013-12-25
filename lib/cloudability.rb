@@ -1,10 +1,8 @@
 require 'httparty'
-require 'mash'
+require 'hashie'
 
-module Cloudability
-  require 'cloudability/billing'
-  require 'cloudability/budgets'
-  require 'cloudability/credentials'
-  require 'cloudability/time_helper'
-  require 'cloudability/version'
-end
+require 'cloudability/billing'
+require 'cloudability/budgets'
+require 'cloudability/credentials'
+
+require 'cloudability/version'

@@ -7,6 +7,7 @@ module Cloudability
     attr_accessor :auth_token
 
     def initialize(options={})
+      raise ArgumentError, "You must provide an auth token" if options[:auth_token].nil?
       @auth_token = options[:auth_token]
     end
 
@@ -17,15 +18,13 @@ module Cloudability
     private
 
     def get_credentials
-      response = self.class.get("/credentials/index?auth_token=#{self.auth_token}")
+      response = self.class.get("/credentials/index?auth_token=#{@auth_token}")
       response.success? ? response : raise(response.response)
     end
 
     # Convert the json into an Array of Mashes.
     def convert_to_mashes(response)
-      credentials = []
-      mashes = response.each { |c| credentials << Mash.new(c) }
-      return credentials
+      response.map { |credential| Hashie::Mash.new(credential) }
     end
 
   end

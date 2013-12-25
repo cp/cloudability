@@ -14,8 +14,8 @@ module Cloudability
     end
 
     # Define which dimension the billing report will return.
-    def report_by(options={})
-      case options
+    def report_by(dimension)
+      case dimension
       when :account
         @params << "&by=account"
       when :credential
@@ -26,19 +26,25 @@ module Cloudability
         @params << "&by=service"
       when :vendor
         @params << "&by=vendor"
+      else
+        raise ArgumentError, "You must provide a valid dimension to report on."
       end
 
       billings = get_url(@params)
-      billings.map { |b| Mash.new(b) }
+      billings.map { |b| Hashie::Mash.new(b) }
     end
 
     # Find a particular period, based on its month.
     # Period must be in YY-MM-01 format with the date always 01.
     def filter_by_period(period)
+      unless period =~ /^[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/
+        raise ArgumentError, "You must provide a valid date in the form of 'YY-MM-DD'."
+      end
+
       @params << "&period=#{period}"
       single_billing = get_url(@params).first
 
-      Mash.new(single_billing)
+      Hashie::Mash.new(single_billing)
     end
 
     private

@@ -1,6 +1,6 @@
-# Cloudability  [![Build Status](https://secure.travis-ci.org/rkive/cloudability.png)](http://travis-ci.org/rkive/cloudability)
+[![Build Status](https://travis-ci.org/ColbyAley/cloudability.png?branch=master)](https://travis-ci.org/ColbyAley/cloudability)
 
-Ruby wrapper for the Cloudability API using httparty.
+Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/).
 
 ## Installation
 
@@ -18,16 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-  Covers endpoints:
-  * credentials
-  * budgets
-  * and partial billing_reports
+  Supported endpoints:
+  * Credentials
+  * Budgets
+  * Reporting
+
+Feel free to shoot me an email at colby@cloudability.com if you have any questions or need help.
   
+### Credentials
+  Retrieve an array containing all your Cloud Accounts.
 
-### Credential Endpoint:
-  Caputure an array containing all your Cloud Accounts 
-
-    credentials = Cloudability::Credentials.new(:auth_token => 'xxxxxxxxxxxxxxxxxxxx')
+    credentials = Cloudability::Credentials.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
     all_credentials = credentials.find_all
     first_account = all_credentials.first
 
@@ -44,12 +45,10 @@ Or install it yourself as:
     puts first_account.vendor_id
     puts first_account.vendor_key
 
-
 ## TODO:
-  * finish report by and filter by options.
-  * Refactor!
-  * More Docs!
-
+  * More tests!
+  * More endpoints!
+  * More awesomeness!
 
 ## Contributing
 

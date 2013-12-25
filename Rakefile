@@ -1,9 +1,12 @@
 require 'bundler/gem_tasks'
-require 'rake/testtask'
 
-Rake::TestTask.new do |t|
-  t.test_files = FileList['test/lib/cloudability/test_*.rb']
-  t.verbose = true
+task :default => :spec
+desc 'run Rspec specs'
+task :spec do
+  sh 'rspec'
 end
 
-task :default => :test
+task :irb do
+  require File.expand_path('../lib/cloudability.rb', __FILE__)
+  sh 'irb -r ./lib/cloudability.rb'
+end

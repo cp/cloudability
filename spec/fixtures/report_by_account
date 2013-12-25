@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Wed, 25 Dec 2013 02:18:25 GMT
+Content-Type: application/json
+Content-Length: 1792
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=4f95f0a64cfeb8e02daf80dfb0ea9991--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "84a218eedbe7d943b0857ee19afb8fa2"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 8891c880e5625ce8d39bdd79e7b12d7f
+X-Runtime: 0.221266
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"account_id":null,"account_name":null,"credential_id":22975,"credential_name":"Capsule CRM 1","vendor_id":77,"vendor_name":"Capsule CRM","spend":11111.0,"currency":"USD"},{"account_id":11731,"account_name":"xxx","credential_id":8778,"credential_name":"SL54339","vendor_id":67,"vendor_name":"SoftLayer","spend":11111.11,"currency":"USD"},{"account_id":12019,"account_name":"17474","credential_id":8884,"credential_name":"Acme Co. NewRelic","vendor_id":25,"vendor_name":"New Relic","spend":1111.0,"currency":"USD"},{"account_id":82,"account_name":"xxx","credential_id":136,"credential_name":"Acme Co","vendor_id":2,"vendor_name":"Heroku","spend":1111.47,"currency":"USD"},{"account_id":12021,"account_name":"xxx","credential_id":8885,"credential_name":"IAUC SendGrid","vendor_id":54,"vendor_name":"SendGrid","spend":111.46,"currency":"USD"},{"account_id":12020,"account_name":"26117","credential_id":8887,"credential_name":"IAUC Zencoder","vendor_id":30,"vendor_name":"Zencoder","spend":111.11,"currency":"USD"},{"account_id":26,"account_name":"1111-1111-1111","credential_id":15457,"credential_name":"Acme Co. Production","vendor_id":1,"vendor_name":"Amazon","spend":111111.11,"currency":"USD"},{"account_id":12343,"account_name":"61268799130651","credential_id":10091,"credential_name":"HP Cloud (Acme Co.)","vendor_id":124,"vendor_name":"Hpcloud","spend":11.1,"currency":"USD"},{"account_id":1928,"account_name":"xxx","credential_id":8771,"credential_name":"MailChimp","vendor_id":11,"vendor_name":"MailChimp","spend":111.1,"currency":"USD"}]
