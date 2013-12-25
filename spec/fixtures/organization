@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Wed, 25 Dec 2013 04:39:38 GMT
+Content-Type: application/json
+Content-Length: 489
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=299338dc5633de816a18ac8c96d29724--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "76b41bc42bebdf7277b6eae517c77de3"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: c1bbd7740bce218bd4a97423aba86c3d
+X-Runtime: 0.235944
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+{"id":1548,"name":"Colby Aley","default":false,"children":[],"invitations":[{"id":1548,"state":"accepted","user":{"id":5902,"full_name":"Colby Aley","email":"colby@aley.me","default_filter_set_id":null,"is_organization_admin":true,"currency":{"key":"usd","symbol":"$","symbol_first":true,"thousands_separator":",","decimal_mark":"."},"is_enterprise":true,"ri_az_transfer_beta":false},"organization_role":{"id":1,"key":"admin","label":"Administrator"}}],"created_at":"2013-07-11T02:35:52Z"}
