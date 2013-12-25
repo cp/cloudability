@@ -1,4 +1,6 @@
 require 'rubygems'
+require 'coveralls'
+Coveralls.wear!
 require 'bundler'
 require 'fakeweb'
 require 'cloudability'

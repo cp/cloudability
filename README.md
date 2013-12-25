@@ -1,6 +1,11 @@
-[![Build Status](https://travis-ci.org/ColbyAley/cloudability.png?branch=master)](https://travis-ci.org/ColbyAley/cloudability)
+Cloudability
+===
 
-Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/).
+[![Build Status](https://travis-ci.org/ColbyAley/cloudability.png?branch=master)](https://travis-ci.org/ColbyAley/cloudability)
+[![Code Climate](https://codeclimate.com/github/ColbyAley/cloudability.png)](https://codeclimate.com/github/ColbyAley/cloudability)
+[![Coverage Status](https://coveralls.io/repos/ColbyAley/cloudability/badge.png)](https://coveralls.io/r/ColbyAley/cloudability)
+
+Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports managing credentials, organizations, budgets, and cost reports.
 
 ## Installation
 
