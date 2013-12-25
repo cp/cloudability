@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Wed, 25 Dec 2013 04:46:40 GMT
+Content-Type: application/json
+Content-Length: 746
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=53ec8b9512d2efe39fd059709c8ad35c--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "55e062e7527926f54559b0e2ad810915"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 2f5a92d8db37da8e719265cf74866386
+X-Runtime: 0.151318
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"id":10424,"state":"pending","user":{"id":10502,"full_name":"Cudi Aley","email":"ayycudi@aley.me","default_filter_set_id":null,"is_organization_admin":false,"currency":{"key":"usd","symbol":"$","symbol_first":true,"thousands_separator":",","decimal_mark":"."},"is_enterprise":true,"ri_az_transfer_beta":false},"organization_role":{"id":2,"key":"user","label":"User"}},{"id":1548,"state":"accepted","user":{"id":5902,"full_name":"Colby Aley","email":"colby@aley.me","default_filter_set_id":null,"is_organization_admin":true,"currency":{"key":"usd","symbol":"$","symbol_first":true,"thousands_separator":",","decimal_mark":"."},"is_enterprise":true,"ri_az_transfer_beta":false},"organization_role":{"id":1,"key":"admin","label":"Administrator"}}]

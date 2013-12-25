@@ -14,6 +14,9 @@ module Cloudability
     end
 
     # Define which dimension the billing report will return.
+    #
+    # @param [Symbol] dimension to report on.
+    # @return [Array] array of Hashie::Mashes
     def report_by(dimension)
       case dimension
       when :account
@@ -49,6 +52,9 @@ module Cloudability
 
     private
 
+    # GET a URL with HTTParty
+    #
+    # @param [Array] array of URL params to pass to HTTParty
     def get_url(params)
       joined_param = params.join
       response = self.class.get("/billing_reports?auth_token=#{@auth_token}#{joined_param}")

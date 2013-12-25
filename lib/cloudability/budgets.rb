@@ -49,7 +49,10 @@ module Cloudability
       response.success? ? response : raise(response.response)
     end
 
-    # Convert the json into an Array of Mashes.
+    # Convert the JSON into an Array of Mashes.
+    #
+    # @param [String] JSON array
+    # @return [Array] array of Hashie::Mashes
     def convert_to_mashes(response)
       response.map { |budget| Hashie::Mash.new(budget) }
     end

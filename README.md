@@ -30,20 +30,17 @@ Feel free to shoot me an email at colby@cloudability.com if you have any questio
 
     credentials = Cloudability::Credentials.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
     all_credentials = credentials.find_all
-    first_account = all_credentials.first
 
     puts first_account.account_created_at
     puts first_account.account_identifier
     puts first_account.created_at
     puts first_account.has_auth
     puts first_account.has_estimate
-    puts first_account.id
-    puts first_account.is_duplicate
-    puts first_account.nickname
-    puts first_account.state
-    puts first_account.updated_at
-    puts first_account.vendor_id
-    puts first_account.vendor_key
+
+### Organizations
+
+    c = Cloudability::Organizations.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
+    c.invite_user(email: 'colby@cloudability.com', name: 'Colby Aley')
 
 ## TODO:
   * More tests!

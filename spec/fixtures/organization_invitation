@@ -1,0 +1,18 @@
+HTTP/1.1 201 Created
+Server: nginx/1.4.4
+Date: Wed, 25 Dec 2013 05:47:18 GMT
+Content-Type: application/json
+Content-Length: 318
+Connection: keep-alive
+Status: 201 Created
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=379f814d012ea011e3b06a9d27c08589--201; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "315d11c00c3c098a8b232bdc46310b93"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: eada05630363230c2942dd46f0561cf2
+X-Runtime: 1.487748
+X-Rack-Cache: invalidate, pass
+Origin: app.cloudability.com
+
+{"id":10427,"state":"pending","user":{"id":10505,"full_name":null,"email":"colbyaleyrb@gmail.com","default_filter_set_id":null,"is_organization_admin":false,"currency":{"key":"usd","symbol":"$","symbol_first":true,"thousands_separator":",","decimal_mark":"."}},"organization_role":{"id":2,"key":"user","label":"User"}}
