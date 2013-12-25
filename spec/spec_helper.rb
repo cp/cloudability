@@ -45,6 +45,7 @@ RSpec.configure do |c|
 end
 
 FakeWeb.allow_net_connect = false
+FakeWeb.allow_net_connect = %r[^https?://coveralls.io/api/v1/jobs]
 
 # Creating fixtures:
 # curl -is https://app.cloudability.com/api/0/billing_reports?auth_token=token&by=account > spec/fixtures/billing_report
