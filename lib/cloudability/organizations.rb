@@ -1,5 +1,3 @@
-require 'json'
-
 module Cloudability
   class Organizations
     include HTTParty
@@ -21,6 +19,11 @@ module Cloudability
 
     def invitations
       response = get_url("/organizations/invitations?auth_token=#{@auth_token}")
+      convert_to_mashes(response)
+    end
+
+    def roles
+      response = get_url("/organizations/roles?auth_token=#{@auth_token}")
       convert_to_mashes(response)
     end
 

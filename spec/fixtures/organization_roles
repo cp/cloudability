@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Wed, 25 Dec 2013 06:00:08 GMT
+Content-Type: application/json
+Content-Length: 85
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=7b713ce79009c9db2eaea4cde43268e9--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "4ccf5f4c217aaffe5601d88739504032"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 01a7274813811338beb87e23669afdda
+X-Runtime: 0.024049
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"id":1,"key":"admin","label":"Administrator"},{"id":2,"key":"user","label":"User"}]

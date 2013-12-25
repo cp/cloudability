@@ -22,6 +22,7 @@ Or install it yourself as:
   * Credentials
   * Budgets
   * Reporting
+  * Organizations (Including invitations and roles.)
 
 Feel free to shoot me an email at colby@cloudability.com if you have any questions or need help.
   
@@ -41,6 +42,8 @@ Feel free to shoot me an email at colby@cloudability.com if you have any questio
 
     c = Cloudability::Organizations.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
     c.invite_user(email: 'colby@cloudability.com', name: 'Colby Aley')
+    c.roles
+    c.invitations
 
 ## TODO:
   * More tests!

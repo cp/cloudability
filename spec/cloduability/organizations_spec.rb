@@ -34,6 +34,18 @@ describe Cloudability::Organizations do
     end
   end
 
+  describe '#roles' do
+    it 'should be an Array' do
+      stub_get('/1/organizations/roles?auth_token=token', 'organization_roles')
+      @cloudability.roles.class.should == Array
+    end
+
+    it 'should be an array of Hashie::Mashes' do
+      stub_get('/1/organizations/roles?auth_token=token', 'organization_roles')
+      @cloudability.roles.each{|role| role.class.should == Hashie::Mash }
+    end
+  end
+
   describe '#invite_user' do
     it 'should be a Hashie::Mash' do
       stub_post('/1/organizations/invitations?auth_token=token&email=colbyaleyrb%40gmail.com', 'organization_invitation')
