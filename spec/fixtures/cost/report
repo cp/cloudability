@@ -1,0 +1,16 @@
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.4.4
+Date: Thu, 26 Dec 2013 07:48:50 GMT
+Content-Type: application/json
+Content-Length: 28
+Connection: keep-alive
+Status: 401 Unauthorized
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=45efbe219662899fe9775a3ce1cf34a6--401; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+Cache-Control: no-cache
+X-Request-Id: f71f1c66237f1f9d2596dc7f21b4a0ca
+X-Runtime: 0.012704
+X-Rack-Cache: miss
+
+{"error":"401 Unauthorized"}

@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'coveralls'
-Coveralls.wear!
+# Coveralls.wear!
 require 'bundler'
 require 'fakeweb'
 require 'cloudability'
@@ -34,7 +34,6 @@ module FakeRequestHelpers
     FakeWeb.register_uri(:delete, BASE_URI + url, :response => fixture(name))
   end
 end
-
 
 RSpec.configure do |c|
   c.include(FakeRequestHelpers)

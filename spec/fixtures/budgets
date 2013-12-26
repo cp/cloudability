@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Thu, 26 Dec 2013 07:21:11 GMT
+Content-Type: application/json
+Content-Length: 457
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=7c8b8e7eaf283b883c5bafacc5200436--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "f337342c38dac852161666174d1514c8"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: e9393a77a94b9047adec9b7a650a661a
+X-Runtime: 0.194231
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"predicted_monthly_spend":{"cents":1111111,"currency":{"id":111,"key":"usd","priority":1,"iso_code":"USD"}},"subject":"1111-1111-1111","type":"Account","currency":"USD","id":1111,"is_active":true,"threshold":"50000.0"},{"predicted_monthly_spend":{"cents":1111111,"currency":{"id":111,"key":"usd","priority":1,"iso_code":"USD"}},"subject":"colby@cloudability.com","type":"User","currency":"USD","id":1111,"is_active":true,"threshold":"100000.0"}]

@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Thu, 26 Dec 2013 07:58:43 GMT
+Content-Type: application/json
+Content-Length: 17437
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=38a29ac591a907a6ea6462573e6309c4--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "ea20a4170651ebda67ae994220b6c558"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 95e301a456925e1ff3b97bf0cb673bde
+X-Runtime: 0.663877
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"id":1,"category":"Invoice Costs","title":"Account","description":null,"end_date":"today","start_date":"last week","end_date_is_relative":true,"start_date_is_relative":true,"owned_by_user":false,"shared":false,"custom":false,"metrics":[{"type":"metric","name":"invoiced_cost","label":"Total Invoiced Costs","description":"Total cost including taxes and credits","data_type":"currency","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"costs","name":"Costs"}}],"dimensions":[{"type":"dimension","name":"linked_account_name","label":"Linked Account Name","description":"The account name for a linked account in consolidated billing","data_type":"string","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"vendor","name":"Vendor"}}],"filters":[],"report_dimension_links":[]},{"id":2,"category":"Top Products","title":"All Products","description":null,"end_date":"today","start_date":"last week","end_date_is_relative":true,"start_date_is_relative":true,"owned_by_user":false,"shared":false,"custom":false,"metrics":[{"type":"metric","name":"invoiced_cost","label":"Total Invoiced Costs","description":"Total cost including taxes and credits","data_type":"currency","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"costs","name":"Costs"}}],"dimensions":[{"type":"dimension","name":"service_key","label":"Product Code","description":"Shortened name of the product","data_type":"string","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"vendor","name":"Vendor"}}],"filters":[],"report_dimension_links":[]}]

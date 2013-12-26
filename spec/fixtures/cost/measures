@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Thu, 26 Dec 2013 07:55:18 GMT
+Content-Type: application/json
+Content-Length: 10352
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=a862cf891fb1e25947304e8e69966249--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "3029e59c8da38f12b82f81ffa780975a"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 28b5bd1f20212224078aab710431181b
+X-Runtime: 0.153894
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"type":"metric","name":"taxes","label":"Taxes","description":"Taxes applied to line items","data_type":"currency","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"costs","name":"Costs"}},{"type":"metric","name":"credits","label":"Credits","description":"Credits applied to line items","data_type":"currency","group":{"key":"billing","name":"Billing"},"sub_group":{"key":"costs","name":"Costs"}}]

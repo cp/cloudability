@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Thu, 26 Dec 2013 18:21:53 GMT
+Content-Type: application/json
+Content-Length: 15116
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=de570b8bd77b09a8585e532d37847226--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "c96f24bb9f20de7fcca0972b52aa64f9"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 656a6fc360cb046750819e6fc2cc1028
+X-Runtime: 0.044087
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"type":"metric","name":"estimated_cost","label":"Estimated Cost","description":"Estimated based on usage hours multiplied by on-demand pricing","data_type":"currency","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"billing","name":"Billing"}},{"type":"metric","name":"avg_estimated_cost","label":"Avg Estimated Cost","description":"Average estimated cost","data_type":"currency","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"billing","name":"Billing"}},{"type":"metric","name":"avg_estimated_hourly_cost","label":"Avg Estimated Hourly Instance Cost","description":"Average estimated hourly cost","data_type":"currency","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"billing","name":"Billing"}},{"type":"metric","name":"num_attached_storage","label":"Storage Devices","description":"Number of attached storage devices","data_type":"integer","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}},{"type":"metric","name":"inbound_bandwidth","label":"Bandwidth In","description":"The number of bytes inbound on the network","data_type":"bytes","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}}]
