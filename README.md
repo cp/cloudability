@@ -5,7 +5,7 @@ Cloudability
 [![Code Climate](https://codeclimate.com/github/ColbyAley/cloudability.png)](https://codeclimate.com/github/ColbyAley/cloudability)
 [![Coverage Status](https://coveralls.io/repos/ColbyAley/cloudability/badge.png)](https://coveralls.io/r/ColbyAley/cloudability)
 
-Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports managing credentials, organizations, budgets, and cost reports.
+Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most of the public API endpoints, including some legacy ones such as bugets. Converts JSON responses to objects with Hashie::Mash.
 
 ## Installation
 
@@ -24,34 +24,59 @@ Or install it yourself as:
 ## Usage
 
   Supported endpoints:
+
   * Credentials
-  * Budgets
-  * Reporting
   * Organizations (Including invitations and roles.)
+  * Budgets
+  * Billing Reports
+  * Cost Reporrts
+  * Usage Reports
+
+You will need to generate an API token to use the API. Read more [here](https://support.cloudability.com/hc/en-us/articles/200311933-API-Setup-and-Documentation).
 
 Feel free to shoot me an email at colby@cloudability.com if you have any questions or need help.
   
-### Credentials
-  Retrieve an array containing all your Cloud Accounts.
+### Examples
 
-    credentials = Cloudability::Credentials.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
-    all_credentials = credentials.find_all
+    @client = Cloudability::Client.new(auth_token: 'auth_token')
 
-    puts first_account.account_created_at
-    puts first_account.account_identifier
-    puts first_account.created_at
-    puts first_account.has_auth
-    puts first_account.has_estimate
+#### Credentials
 
-### Organizations
+    credentials = @client.credentials # Get all of your connected credentials
+    puts first_account.last.account_created_at
+    puts credentials.first.account_identifier
 
-    c = Cloudability::Organizations.new(auth_token: 'xxxxxxxxxxxxxxxxxxxx')
-    c.invite_user(email: 'colby@cloudability.com', name: 'Colby Aley')
-    c.roles
-    c.invitations
+#### Organizations
+
+    @client.invite_user('colby@cloudability.com', name: 'Colby Aley') # Invite a user to your org
+    @client.my_organization # Get info about your org
+    @client.organization_invitations # List invitations for your org
+    @client.organization_roles # List roles for your org
+
+#### Budgets
+
+    @client.budgets # List your current budgets
+
+#### Billing Reports
+
+    @client.billing_report # Generate a report of your spend
+    @client.billing_report(vendor: 'Amazon', by: 'period')
+    @client.billing_report(by: 'vendor')
+
+#### Cost Reports
+
+    @client.cost_reports # List cost reports
+    @client.cost_measures # List measures supported by server
+    @client.cost_filters # List filters supported by the server
+
+#### Usage Reports
+
+    @client.usage_reports # List usage reports
+    @client.usage_measures # List measures supported by server
+    @client.usage_filters # List filters supported by the server
 
 ## TODO:
-  * More tests!
+  * Better tests!
   * More endpoints!
   * More awesomeness!
 

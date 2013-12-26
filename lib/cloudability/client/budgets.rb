@@ -9,6 +9,7 @@ module Cloudability
         request = get '/1/budgets/index'
         convert_to_mashes(request)
       end
+      
     end
   end
 end

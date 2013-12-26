@@ -40,6 +40,7 @@ module Cloudability
       def cost_filters
         get('/1/reporting/cost/filters').to_a
       end
+      
     end
   end
 end

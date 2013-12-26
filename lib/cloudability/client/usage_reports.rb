@@ -40,6 +40,7 @@ module Cloudability
       def usage_filters
         get('/1/reporting/filters').to_a
       end
+      
     end
   end
 end
