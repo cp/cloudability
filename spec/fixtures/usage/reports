@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Fri, 27 Dec 2013 05:31:15 GMT
+Content-Type: application/json
+Content-Length: 44476
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: _mkra_ctxt=1f0f9e994c1eda7c8aaca1c638e169e7--200; path=/; secure
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "575c428e918fe64a860eaf6e6cc8ba2e"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9534fd1ae2484ed36a74011e9f5816e4
+X-Runtime: 1.713328
+X-Rack-Cache: miss
+Origin: app.cloudability.com
+
+[{"id":2,"category":"Utilization","title":"Longest Running","description":null,"end_date":"today","start_date":"last week","end_date_is_relative":true,"start_date_is_relative":true,"owned_by_user":false,"shared":false,"custom":false,"metrics":[{"type":"metric","name":"hours_since_launch","label":"Hours Since Launch","description":"Hours since instance launch","data_type":"float","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"time","name":"Time"}},{"type":"metric","name":"utilization_hours","label":"Utilization Hours","description":"Utilization hours","data_type":"integer","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}},{"type":"metric","name":"avg_estimated_hourly_cost","label":"Avg Estimated Hourly Instance Cost","description":"Average estimated hourly cost","data_type":"currency","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"billing","name":"Billing"}}],"dimensions":[{"type":"dimension","name":"instance_identifier","label":"Instance ID","description":"Instance ID","data_type":"string","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"common","name":"Common"}},{"type":"dimension","name":"instance_size","label":"Size","description":"Size of the Instance","data_type":"string","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"common","name":"Common"}}],"filters":[],"report_dimension_links":[]},{"id":3,"category":"Utilization","title":"Instance Aging","description":null,"end_date":"today","start_date":"last week","end_date_is_relative":true,"start_date_is_relative":true,"owned_by_user":false,"shared":false,"custom":false,"metrics":[{"type":"metric","name":"terminated_instances","label":"Terminated Instances","description":"Number of terminated instances","data_type":"integer","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}},{"type":"metric","name":"running_instances","label":"Running Instances","description":"Number of running instances","data_type":"integer","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}}],"dimensions":[{"type":"dimension","name":"days_since_launch","label":"Days Alive","description":"Days since instance was launched","data_type":"integer","group":{"key":"compute","name":"Compute"},"sub_group":{"key":"usage","name":"Usage"}}],"filters":[],"report_dimension_links":[]}]

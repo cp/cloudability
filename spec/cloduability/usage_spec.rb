@@ -8,12 +8,12 @@ describe Cloudability::Client::UsageReports do
 
   describe '#usage_reports' do
     it 'should be an array' do
-      stub_get('/1/reporting/usage?auth_token=token', 'usage/reports')
+      stub_get('/1/reporting?auth_token=token', 'usage/reports')
       @client.usage_reports.should be_kind_of Array
     end
 
     it 'should be an array of Hashie::Mashes' do
-      stub_get('/1/reporting/usage?auth_token=token', 'usage/reports')
+      stub_get('/1/reporting?auth_token=token', 'usage/reports')
       @client.usage_reports.each{|report| report.should be_kind_of Hashie::Mash }
     end
   end

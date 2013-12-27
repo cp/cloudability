@@ -7,7 +7,7 @@ module Cloudability
       # @see http://developers.cloudability.com/resources/usage/
       # @return [Array] array of Hashie::Mashes
       def usage_reports
-        request = get '/1/reporting/usage'
+        request = get '/1/reporting'
         convert_to_mashes request
       end
 
