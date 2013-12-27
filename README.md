@@ -7,6 +7,8 @@ Cloudability
 
 Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most of the public API endpoints, including some legacy ones such as bugets. Converts JSON responses to objects with Hashie::Mash.
 
+This is the README for version 0.1.0 of the gem. v0.1.0 introduces a radically different interface. If you're still on v0.0.5, please refer to it's [README](https://github.com/ColbyAley/cloudability/tree/v0.0.5).
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -49,6 +51,8 @@ Feel free to shoot me an email at colby@cloudability.com if you have any questio
 #### Organizations
 
     @client.invite_user('colby@cloudability.com', name: 'Colby Aley') # Invite a user to your org
+    @client.delete_invite(1) # Delete invite 1
+    @client.update_invite(103,1) # Update invitation 103 to have role id 1
     @client.my_organization # Get info about your org
     @client.organization_invitations # List invitations for your org
     @client.organization_roles # List roles for your org

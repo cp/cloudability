@@ -9,12 +9,22 @@ describe Cloudability::Client::BillingReports do
   describe '#billing_reports' do
     it 'should be an array' do
       stub_get('/1/billing_reports?auth_token=token', 'billing_reports')
-      @client.billing_report.class.should == Array
+      @client.billing_report.should be_kind_of Array
     end
 
     it 'should be an array of Hashie::Mashes' do
       stub_get('/1/billing_reports?auth_token=token', 'billing_reports')
-      @client.billing_report.each{|report| report.class.should == Hashie::Mash }
+      @client.billing_report.each{|report| report.should be_kind_of Hashie::Mash }
+    end
+
+    it 'should have a currency attrubute on every element' do
+      stub_get('/1/billing_reports?auth_token=token', 'billing_reports')
+      @client.billing_report.each{|report| report.currency.should_not be_nil }
+    end
+
+    it 'should return results by service' do
+      stub_get('/1/billing_reports?auth_token=token&by=service', 'billing_reports')
+      expect { @client.billing_report(by: 'service') }.not_to raise_exception
     end
 
     it 'should return results given by service, given the vendor and period' do

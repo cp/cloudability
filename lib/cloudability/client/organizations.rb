@@ -46,6 +46,31 @@ module Cloudability
       end
       alias :invite :invite_user
 
+      # Delete an invitation to the authenticated user's organization
+      #
+      # @see http://developers.cloudability.com/resources/organizations/invitations/
+      # @param [Integer] id of the invitation
+      # @return 
+      def delete_invite(id)
+        request = delete "/1/organizations/invitations/#{id}"
+        Hashie::Mash.new request
+      end
+      alias :delete_invitation :delete_invite
+
+      # Update a user's invitation to an organization.
+      #
+      # @see http://developers.cloudability.com/resources/organizations/invitations/
+      # @param [Integer] id to update
+      # @param [Integer] role id to assign to invite
+      # @return [Hashie::Mash]
+      def update_invite(id, role_id)
+        options = {}
+        options[:role_id] = role_id
+
+        request = put "/1/organizations/invitations/#{id}", options
+        Hashie::Mash.new request
+      end
+      alias :update_invitation :update_invite
     end
   end
 end
