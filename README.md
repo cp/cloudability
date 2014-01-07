@@ -4,6 +4,7 @@ Cloudability
 [![Build Status](https://travis-ci.org/ColbyAley/cloudability.png?branch=master)](https://travis-ci.org/ColbyAley/cloudability)
 [![Code Climate](https://codeclimate.com/github/ColbyAley/cloudability.png)](https://codeclimate.com/github/ColbyAley/cloudability)
 [![Coverage Status](https://coveralls.io/repos/ColbyAley/cloudability/badge.png)](https://coveralls.io/r/ColbyAley/cloudability)
+[![Gem Version](https://badge.fury.io/rb/cloudability.png)](http://badge.fury.io/rb/cloudability)
 
 Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most of the public API endpoints, including some legacy ones such as bugets. Converts JSON responses to objects with Hashie::Mash.
 
