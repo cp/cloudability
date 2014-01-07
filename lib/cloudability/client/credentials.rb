@@ -9,7 +9,7 @@ module Cloudability
         request = get '/0/credentials/index'
         convert_to_mashes request
       end
-      
+
     end
   end
 end

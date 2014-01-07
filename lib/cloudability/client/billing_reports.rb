@@ -5,7 +5,7 @@ module Cloudability
       # Generate a report of your spend
       #
       # @param [Hash] optional parameters
-      # @return [Array] array of Hashie::Mashes
+      # @return [Array<Hashie::Mash>] array of Hashie::Mashes
       # @see http://developers.cloudability.com/resources/billing_reports/
       # @example generate report
       #   .billing_report(vendor: 'Amazon')
@@ -16,7 +16,7 @@ module Cloudability
         convert_to_mashes request
       end
       alias :billing_reports :billing_report
-      
+
     end
   end
 end

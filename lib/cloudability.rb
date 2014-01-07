@@ -10,8 +10,11 @@ require 'cloudability/client/organizations'
 
 require 'cloudability/version'
 
-
 module Cloudability
+
+  # Exceptions
+  class RequestError < StandardError; end
+
   class Client
     include Cloudability::Client::BillingReports
     include Cloudability::Client::UsageReports
@@ -32,28 +35,28 @@ module Cloudability
 
     def get(url, params={})
       response = self.class.get(url, options(query: params))
-      response.success? ? response : raise(response.response)
+      response.success? ? response : raise(RequestError, response.message)
     end
 
     def post(url, params={})
       response = self.class.post(url, options(query: params))
-      response.success? ? response : raise(response.response)
+      response.success? ? response : raise(RequestError, response.message)
     end
 
     def put(url, params={})
       response = self.class.put(url, options(query: params))
-      response.success? ? response : raise(response.response)
+      response.success? ? response : raise(RequestError, response.message)
     end
 
     def delete(url, params={})
       response = self.class.delete(url, options(query: params))
-      response.success? ? response : raise(response.response)
+      response.success? ? response : raise(RequestError, response.message)
     end
 
     # Convert the an array of hashes into an array of Mashes!
     #
-    # @param [String] array of hashes.
-    # @return [Array] array of Hashie::Mashes
+    # @param [String] array of Ruby hashes
+    # @return [Array<Hashie::Mash>] array of Hashie::Mashes
     def convert_to_mashes(array)
       array.map { |element| Hashie::Mash.new(element) }
     end
