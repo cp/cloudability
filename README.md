@@ -6,7 +6,7 @@ Cloudability
 [![Coverage Status](https://coveralls.io/repos/ColbyAley/cloudability/badge.png)](https://coveralls.io/r/ColbyAley/cloudability)
 [![Gem Version](https://badge.fury.io/rb/cloudability.png)](http://badge.fury.io/rb/cloudability)
 
-Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most of the public API endpoints, including some legacy ones such as bugets. Converts JSON responses to objects with Hashie::Mash.
+Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most public API endpoints, including some legacy ones such as budgets. Converts JSON responses to objects with Hashie::Mash.
 
 This is the README for version 0.1.0 of the gem. v0.1.0 introduces a radically different interface. If you're still on v0.0.5, please refer to it's [README](https://github.com/ColbyAley/cloudability/tree/v0.0.5).
 
@@ -37,8 +37,8 @@ Or install it yourself as:
 
 You will need to generate an API token to use the API. Read more [here](https://support.cloudability.com/hc/en-us/articles/200311933-API-Setup-and-Documentation).
 
-Feel free to shoot me an email at colby@cloudability.com if you have any questions or need help.
-  
+Feel free to shoot me an email at colby@aley.me if you have any questions or need help.
+
 ### Examples
 
     @client = Cloudability::Client.new(auth_token: 'auth_token')
@@ -79,11 +79,6 @@ Feel free to shoot me an email at colby@cloudability.com if you have any questio
     @client.usage_reports # List usage reports
     @client.usage_measures # List measures supported by server
     @client.usage_filters # List filters supported by the server
-
-## TODO:
-  * Better tests!
-  * More endpoints!
-  * More awesomeness!
 
 ## Contributing
 

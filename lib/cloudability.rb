@@ -16,17 +16,18 @@ module Cloudability
   class RequestError < StandardError; end
 
   class Client
-    include Cloudability::Client::BillingReports
-    include Cloudability::Client::UsageReports
-    include Cloudability::Client::CostReports
-    include Cloudability::Client::Budgets
-    include Cloudability::Client::Credentials
-    include Cloudability::Client::Organizations
+    include BillingReports
+    include UsageReports
+    include CostReports
+    include Budgets
+    include Credentials
+    include Organizations
+
     include HTTParty
 
-    def initialize(options={})
-      raise ArgumentError, "You must provide an auth token" if options[:auth_token].nil?
-      @auth_token = options[:auth_token]
+    def initialize(opts={})
+      raise ArgumentError, "You must provide an auth token" if opts[:auth_token].nil?
+      @auth_token = opts[:auth_token]
     end
 
     base_uri 'https://app.cloudability.com/api'
@@ -61,12 +62,12 @@ module Cloudability
       array.map { |element| Hashie::Mash.new(element) }
     end
 
-    def options(o={})
-      o[:query] ||= {}
-      o[:headers] ||= {}
-      o[:headers]['User-Agent'] = "Cloudability-Ruby #{Cloudability::VERSION}"
-      o[:query][:auth_token] = @auth_token
-      o
+    def options(opts={})
+      opts[:query] ||= {}
+      opts[:headers] ||= {}
+      opts[:headers]['User-Agent'] = "Cloudability-Ruby #{Cloudability::VERSION}"
+      opts[:query][:auth_token] = @auth_token
+      opts
     end
 
   end
