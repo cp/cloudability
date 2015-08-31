@@ -35,7 +35,7 @@ Or install it yourself as:
   * Cost Reporrts
   * Usage Reports
 
-You will need to generate an API token to use the API. Read more [here](https://support.cloudability.com/hc/en-us/articles/200311933-API-Setup-and-Documentation).
+You will need to generate an API token to use the API. Read more [here](https://support.cloudability.com/hc/en-us/articles/204308448-API-setup-and-documentation).
 
 Feel free to shoot me an email at colby@aley.me if you have any questions or need help.
 
