@@ -1,0 +1,17 @@
+HTTP/1.1 201 Created
+Server: nginx/1.7.4
+Date: Sun, 01 Nov 2015 20:10:30 GMT
+Content-Type: application/json
+Content-Length: 191
+Connection: keep-alive
+Status: 201 Created
+Strict-Transport-Security: max-age=31536000
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "52d5a5192986be3fea6505d5140bfe45"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: e4edf6d852b2334add97ea58c9f5e43e
+X-Runtime: 0.596605
+X-Rack-Cache: invalidate, pass
+X-Frame-Options: DENY
+
+{"id":23052,"email":"colbyaley@gmail.com","full_name":null,"invitation":"pending","role":"User","restricted":false,"shared_dimension_filter_set_ids":[],"default_dimension_filter_set_id":null}
