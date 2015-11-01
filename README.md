@@ -34,6 +34,7 @@ Or install it yourself as:
   * Billing Reports
   * Cost Reporrts
   * Usage Reports
+  * Users
 
 You will need to generate an API token to use the API. Read more [here](https://support.cloudability.com/hc/en-us/articles/204308448-API-setup-and-documentation).
 
@@ -41,44 +42,51 @@ Feel free to shoot me an email at colby@aley.me if you have any questions or nee
 
 ### Examples
 
-    @client = Cloudability::Client.new(auth_token: 'auth_token')
+    client = Cloudability::Client.new(auth_token: 'auth_token')
+
+#### Users
+
+    client.users # List users in your organization
+    client.add_user # Add a user to your organization
+    client.update_user # Update a user in your organization
+    client.delete_user # Delete a user in your organization.
 
 #### Credentials
 
-    credentials = @client.credentials # Get all of your connected credentials
+    credentials = client.credentials # Get all of your connected credentials
     puts first_account.last.account_created_at
     puts credentials.first.account_identifier
 
 #### Organizations
 
-    @client.invite_user('colby@cloudability.com', name: 'Colby Aley') # Invite a user to your org
-    @client.delete_invite(1) # Delete invite 1
-    @client.update_invite(103,1) # Update invitation 103 to have role id 1
-    @client.my_organization # Get info about your org
-    @client.organization_invitations # List invitations for your org
-    @client.organization_roles # List roles for your org
+    client.invite_user('colby@cloudability.com', name: 'Colby Aley') # Invite a user to your org
+    client.delete_invite(1) # Delete invite 1
+    client.update_invite(103,1) # Update invitation 103 to have role id 1
+    client.my_organization # Get info about your org
+    client.organization_invitations # List invitations for your org
+    client.organization_roles # List roles for your org
 
 #### Budgets
 
-    @client.budgets # List your current budgets
+    client.budgets # List your current budgets
 
 #### Billing Reports
 
-    @client.billing_report # Generate a report of your spend
-    @client.billing_report(vendor: 'Amazon', by: 'period')
-    @client.billing_report(by: 'vendor')
+    client.billing_report # Generate a report of your spend
+    client.billing_report(vendor: 'Amazon', by: 'period')
+    client.billing_report(by: 'vendor')
 
 #### Cost Reports
 
-    @client.cost_reports # List cost reports
-    @client.cost_measures # List measures supported by server
-    @client.cost_filters # List filters supported by the server
+    client.cost_reports # List cost reports
+    client.cost_measures # List measures supported by server
+    client.cost_filters # List filters supported by the server
 
 #### Usage Reports
 
-    @client.usage_reports # List usage reports
-    @client.usage_measures # List measures supported by server
-    @client.usage_filters # List filters supported by the server
+    client.usage_reports # List usage reports
+    client.usage_measures # List measures supported by server
+    client.usage_filters # List filters supported by the server
 
 ## Contributing
 
