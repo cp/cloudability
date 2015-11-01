@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Server: nginx/1.7.7
+Date: Sun, 01 Nov 2015 20:19:18 GMT
+Content-Type: application/json
+Content-Length: 916
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "1c5a29a9175969252b4352d2e56cf740"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9e130fc8db3c2fc363866a16cf380ba2
+X-Runtime: 0.069726
+X-Rack-Cache: invalidate, pass
+X-Frame-Options: DENY
+
+{"id":23052,"full_name":"Colby Aley","email":"colbyaley@gmail.com","is_organization_admin":false,"is_billing_contact":false,"currency":{"key":"usd","symbol":"$","symbol_first":true,"thousands_separator":",","decimal_mark":".","subunit_to_unit":100},"invitation":"pending","role":"User","restricted":false,"shared_dimension_filter_set_ids":[],"default_dimension_filter_set_id":null,"is_enterprise":true,"ri_az_transfer_beta":false,"custom_rate_card_beta":false,"advanced_charting_beta":false,"dashboard_beta":true,"cost_cube_estimates_beta":true,"extended_account_groups_beta":false,"cost_per_hour_beta":false,"ri_portfolio_beta":false,"company":"Colby Aley","company_size":"2_3","company_sector":"software_and_web","time_zone":"Pacific Time (US \u0026 Canada)","language":"en-us","summary_period":"daily","summary_hour":6,"show_credentials":false,"exclude_credits":null,"exclude_capex":null,"config_state":"created"}

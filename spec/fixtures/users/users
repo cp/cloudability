@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Server: nginx/1.7.8
+Date: Sun, 01 Nov 2015 20:03:37 GMT
+Content-Type: application/json
+Content-Length: 391
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "18cfa380bed0c270c4ed01171c03a1c8"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 32e5e4dadaf751516b61af1b124026ec
+X-Runtime: 0.052354
+X-Rack-Cache: miss
+X-Frame-Options: DENY
+
+[{"id":23051,"email":"colby@immun.io","full_name":null,"invitation":"pending","role":"User","restricted":false,"shared_dimension_filter_set_ids":[],"default_dimension_filter_set_id":null},{"id":5902,"email":"colby@aley.me","full_name":"Colby Aley","invitation":"accepted","role":"Administrator","restricted":false,"shared_dimension_filter_set_ids":[],"default_dimension_filter_set_id":null}]

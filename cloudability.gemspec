@@ -24,4 +24,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('fakeweb')
   gem.add_development_dependency('rake', '~> 0.6')
   gem.add_development_dependency('coveralls')
+  gem.add_development_dependency('pry')
 end

@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Server: nginx/1.7.5
+Date: Sun, 01 Nov 2015 20:25:23 GMT
+Content-Type: application/json
+Content-Length: 4
+Connection: keep-alive
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "b326b5062b2f0e69046810717534cb09"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 785c003402e2a15e4d0f09c858e46ff6
+X-Runtime: 0.290896
+X-Rack-Cache: invalidate, pass
+X-Frame-Options: DENY
+
+true

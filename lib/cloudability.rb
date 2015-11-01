@@ -7,6 +7,7 @@ require 'cloudability/client/usage_reports'
 require 'cloudability/client/budgets'
 require 'cloudability/client/credentials'
 require 'cloudability/client/organizations'
+require 'cloudability/client/users'
 
 require 'cloudability/version'
 
@@ -22,6 +23,7 @@ module Cloudability
     include Budgets
     include Credentials
     include Organizations
+    include Users
 
     include HTTParty
 

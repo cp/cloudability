@@ -4,6 +4,7 @@ Coveralls.wear!
 require 'bundler'
 require 'fakeweb'
 require 'cloudability'
+require 'pry'
 
 # Borrowed this Fixtures/Fakeweb implimentation
 # fromt the gauges-gem library.
