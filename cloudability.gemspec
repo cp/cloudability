@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["colby@cloudability.com", "abento+github@gmail.com"]
   gem.description   = %q{Ruby wrapper for the Cloudability API}
   gem.summary       = %q{Ruby wrapper for the Cloudability API built with HTTParty}
-  gem.homepage      = "https://github.com/colbyaley/cloudability"
+  gem.homepage      = "https://github.com/cp/cloudability"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
