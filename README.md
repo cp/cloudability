@@ -1,14 +1,14 @@
 Cloudability
 ===
 
-[![Build Status](https://travis-ci.org/ColbyAley/cloudability.png?branch=master)](https://travis-ci.org/ColbyAley/cloudability)
-[![Code Climate](https://codeclimate.com/github/ColbyAley/cloudability.png)](https://codeclimate.com/github/ColbyAley/cloudability)
-[![Coverage Status](https://coveralls.io/repos/ColbyAley/cloudability/badge.png)](https://coveralls.io/r/ColbyAley/cloudability)
+[![Build Status](https://travis-ci.org/cp/cloudability.png?branch=master)](https://travis-ci.org/cp/cloudability)
+[![Code Climate](https://codeclimate.com/github/cp/cloudability.png)](https://codeclimate.com/github/cp/cloudability)
+[![Coverage Status](https://coveralls.io/repos/cp/cloudability/badge.png)](https://coveralls.io/r/cp/cloudability)
 [![Gem Version](https://badge.fury.io/rb/cloudability.png)](http://badge.fury.io/rb/cloudability)
 
 Ruby wrapper for the [Cloudability API](http://developers.cloudability.com/). Supports most public API endpoints, including some legacy ones such as budgets. Converts JSON responses to objects with Hashie::Mash.
 
-This is the README for version 0.1.0 of the gem. v0.1.0 introduces a radically different interface. If you're still on v0.0.5, please refer to it's [README](https://github.com/ColbyAley/cloudability/tree/v0.0.5).
+This is the README for version 0.1.0 of the gem. v0.1.0 introduces a radically different interface. If you're still on v0.0.5, please refer to it's [README](https://github.com/cp/cloudability/tree/v0.0.5).
 
 ## Installation
 
