@@ -4,7 +4,7 @@ module Cloudability
 
       # Get information about the authenticted user's organization
       # NOTE: This requires that you are the organization admin.
-      # 
+      #
       # @return [Hashie::Mash]
       def my_organization
         request = get '/1/organizations'
